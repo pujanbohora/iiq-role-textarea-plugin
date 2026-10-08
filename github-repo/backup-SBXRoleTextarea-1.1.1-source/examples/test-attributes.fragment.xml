@@ -1,0 +1,33 @@
+<!--
+  FRAGMENT, NOT AN IMPORTABLE FILE (see role-attributes.fragment.xml).
+
+  The attribute set used for the tests documented in the README. Add them to
+  a NON-PRODUCTION Bundle ObjectConfig to reproduce the test matrix, then set
+  the plugin configuration to, for example:
+
+    sbxKommentarsText,sbxRoleNotes,sbxReadOnlyNote,sbxPriority,sbxReviewDate,sbxMaxMembers,sbxDoesNotExist
+-->
+
+<!-- string, editable: expected textarea when listed -->
+<ObjectAttribute displayName="SBX Kommentars Text" editMode="Permanent" name="sbxKommentarsText" type="string"/>
+<ObjectAttribute displayName="SBX Role Notes" editMode="Permanent" name="sbxRoleNotes" type="string"/>
+
+<!-- string, editable, NOT listed: expected normal single-line input -->
+<ObjectAttribute displayName="SBX Single Line Note" editMode="Permanent" name="sbxSingleLineNote" type="string"/>
+
+<!-- string with allowed values: IdentityIQ renders a dropdown, plugin leaves it alone -->
+<ObjectAttribute displayName="SBX Priority" editMode="Permanent" name="sbxPriority" type="string">
+  <AllowedValues>
+    <String>Low</String>
+    <String>Medium</String>
+    <String>High</String>
+  </AllowedValues>
+</ObjectAttribute>
+
+<!-- string without editMode: IdentityIQ renders read-only text, plugin leaves it alone -->
+<ObjectAttribute displayName="SBX Read Only Note" name="sbxReadOnlyNote" type="string"/>
+
+<!-- non-string types: rejected by the plugin's REST endpoint, rendered unchanged -->
+<ObjectAttribute displayName="SBX Review Date" editMode="Permanent" name="sbxReviewDate" type="date"/>
+<ObjectAttribute displayName="SBX Critical" editMode="Permanent" name="sbxCritical" type="boolean"/>
+<ObjectAttribute displayName="SBX Max Members" editMode="Permanent" name="sbxMaxMembers" type="int"/>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Plugin PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<Plugin name="SBXRoleTextarea" displayName="SBX Role Extended Attribute Textarea" version="1.0.0" minSystemVersion="8.0" certificationLevel="None">
+  <Attributes>
+    <Map>
+      <entry key="snippets">
+        <value>
+          <List>
+            <Snippet regexPattern="/define/roles/modeler/roleEditor\.jsf" rightRequired="">
+              <Scripts>
+                <String>ui/js/roleTextarea.js</String>
+              </Scripts>
+            </Snippet>
+          </List>
+        </value>
+      </entry>
+    </Map>
+  </Attributes>
+</Plugin>

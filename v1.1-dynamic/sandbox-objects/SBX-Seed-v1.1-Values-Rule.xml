@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE Rule PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<Rule name="SBX Seed v1.1 Values" language="beanshell"><Source>
+import sailpoint.object.Bundle;
+// Resets the 1.1.0 test values on the test role
+Bundle b = context.getObjectByName(Bundle.class, "SBX Textarea Test Role");
+b.setAttribute("sbxKommentarsText", "Kommentar line 1\nKommentar line 2");
+b.setAttribute("sbxRoleNotes", "Notes line 1\nNotes line 2\nNotes line 3");
+b.setAttribute("sbxSingleLineNote", "Single line value");
+b.setAttribute("sbxPriority", "Medium");
+b.setAttribute("sbxReadOnlyNote", "RO line 1\nRO line 2");
+b.setAttribute("sbxCritical", Boolean.TRUE);
+b.setAttribute("sbxMaxMembers", Integer.valueOf(42));
+context.saveObject(b); context.commitTransaction();
+return b.getAttributes();
+</Source></Rule>

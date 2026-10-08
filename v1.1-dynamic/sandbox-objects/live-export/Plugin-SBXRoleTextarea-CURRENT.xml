@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE Plugin PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<Plugin certificationLevel="None" created="1790871137441" displayName="SBX Role Extended Attribute Textarea" id="7f000001a0f81cbb81a0f83ceca00004" installDate="1790873577243" minSystemVersion="8.0" modified="1790873888944" name="SBXRoleTextarea" version="1.1.1">
+  <Attributes>
+    <Map>
+      <entry key="fullPage"/>
+      <entry key="minUpgradableVersion"/>
+      <entry key="policyExecutors"/>
+      <entry key="restResources">
+        <value>
+          <List>
+            <String>com.sbx.roletextarea.rest.RoleTextareaResource</String>
+          </List>
+        </value>
+      </entry>
+      <entry key="scriptPackages"/>
+      <entry key="serviceExecutors"/>
+      <entry key="settings">
+        <value>
+          <List>
+            <Setting dataType="string" helpText="Names (ObjectAttribute name, not display name) of Role extended String attributes to edit as a textarea in the Role Editor. Only single-valued String attributes are accepted; an attribute is converted only where the Role Editor shows it as an editable text input." label="Multiline Role attributes" multiValue="true" name="multilineAttributes" value="sbxKommentarsText,sbxRoleNotes"/>
+          </List>
+        </value>
+      </entry>
+      <entry key="settingsForm"/>
+      <entry key="settingsPage"/>
+      <entry key="snippets">
+        <value>
+          <List>
+            <Snippet regexPattern="/define/roles/modeler/roleEditor\.jsf" rightRequired="">
+              <Scripts>
+                <String>ui/js/roleTextarea.js</String>
+              </Scripts>
+            </Snippet>
+          </List>
+        </value>
+      </entry>
+      <entry key="taskExecutors"/>
+    </Map>
+  </Attributes>
+  <File>
+    <Reference class="sailpoint.object.PersistedFile" id="7f000001a0f811ed81a0f86227030001" name="SBXRoleTextarea-1.1.1.zip"/>
+  </File>
+</Plugin>

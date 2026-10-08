@@ -1,0 +1,22 @@
+<!--
+  FRAGMENT, NOT AN IMPORTABLE FILE.
+
+  These are example <ObjectAttribute> elements for the Bundle (Role)
+  ObjectConfig. Do NOT import this file: importing an ObjectConfig named
+  "Bundle" replaces the whole object, including your role type definitions
+  and existing attributes.
+
+  Either add the attributes in the UI (Gear > Global Settings > Role
+  Attributes) or export your own Bundle ObjectConfig, paste the elements
+  below directly inside <ObjectConfig> (after </Attributes>), and re-import.
+
+  Requirements for an attribute the plugin can turn into a textarea:
+    - type="string"
+    - editMode="Permanent" (or "UntilFeedValueChanges"); without editMode
+      IdentityIQ 8.0 renders the attribute read-only in the Role Editor
+    - no <AllowedValues>, not multi-valued
+-->
+
+<!-- Listed in the plugin setting: commentsText,roleNotes -->
+<ObjectAttribute displayName="Comments" editMode="Permanent" name="commentsText" type="string"/>
+<ObjectAttribute displayName="Role Notes" editMode="Permanent" name="roleNotes" type="string"/>

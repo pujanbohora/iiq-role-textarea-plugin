@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE ObjectConfig PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<ObjectConfig created="1744671280539" id="c0a801bd96361bba819636830d9b00e7" modified="1790872556411" name="Bundle">
+  <Attributes>
+    <Map>
+      <entry key="roleTypeDefinitions">
+        <value>
+          <List>
+            <RoleTypeDefinition displayName="Organizational" icon="organizationalIcon" name="organizational" noAssignmentSelector="true" noAutoAssignment="true" noDetection="true" noIIQ="true" noManualAssignment="true" noPermits="true" noProfiles="true" noRequirements="true" notPermittable="true" notRequired="true">
+              <Description>
+Defines a collection of roles that typically correspond to departments or business units within an organizational hierarchy.
+                </Description>
+              <RequiredRights>
+                <Reference class="sailpoint.object.SPRight" id="c0a801bd96361bba8196368302ab0024" name="ManageOrganizationalRoles"/>
+              </RequiredRights>
+            </RoleTypeDefinition>
+            <RoleTypeDefinition displayName="Business" icon="businessIcon" name="business" noDetection="true" noIIQ="true" noProfiles="true" notPermittable="true" notRequired="true">
+              <Description>
+Defines a collection of users that perform similar functions within the organization.  Business Roles are associated with IT Roles or Entitlement Roles to provide specific levels of access to enterprise IT resources.
+                </Description>
+              <RequiredRights>
+                <Reference class="sailpoint.object.SPRight" id="c0a801bd96361bba8196368302a90023" name="ManageBusinessRoles"/>
+              </RequiredRights>
+            </RoleTypeDefinition>
+            <RoleTypeDefinition displayName="IT" icon="itIcon" name="it" noAssignmentSelector="true" noAutoAssignment="true" noIIQ="true" noManualAssignment="true" noPermits="true" noRequirements="true">
+              <Description>
+Defines a collection of IT entitlements which can be associated with
+Business Roles to provide users with specific access rights.  IT Roles can be
+constrained to entitlements within a single application or expanded to include
+entitlements across applications.
+                </Description>
+              <RequiredRights>
+                <Reference class="sailpoint.object.SPRight" id="c0a801bd96361bba8196368302a60022" name="ManageITRoles"/>
+              </RequiredRights>
+            </RoleTypeDefinition>
+            <RoleTypeDefinition displayName="Entitlement" icon="entitlementIcon" name="entitlement" noAssignmentSelector="true" noAutoAssignment="true" noIIQ="true" noManualAssignment="true" noPermits="true" noRequirements="true">
+              <Description>
+Defines a single IT entitlement necessary to access data or perform
+a specific action within a target system.
+                </Description>
+              <RequiredRights>
+                <Reference class="sailpoint.object.SPRight" id="c0a801bd96361bba8196368302af0025" name="ManageEntitlementRoles"/>
+              </RequiredRights>
+            </RoleTypeDefinition>
+          </List>
+        </value>
+      </entry>
+    </Map>
+  </Attributes>
+  <ObjectAttribute displayName="SBX Kommentars Text" editMode="Permanent" name="sbxKommentarsText" type="string">
+    <Description>TEMP sandbox attribute - multiline textarea experiment</Description>
+  </ObjectAttribute>
+  <ObjectAttribute displayName="SBX Role Notes" editMode="Permanent" name="sbxRoleNotes" type="string">
+    <Description>TEMP 1.1.0 test - configured string, expect textarea</Description>
+  </ObjectAttribute>
+  <ObjectAttribute displayName="SBX Single Line Note" editMode="Permanent" name="sbxSingleLineNote" type="string">
+    <Description>TEMP 1.1.0 test - unconfigured string, expect normal input</Description>
+  </ObjectAttribute>
+  <ObjectAttribute displayName="SBX Priority" editMode="Permanent" name="sbxPriority" type="string">
+    <AllowedValues>
+      <String>Low</String>
+      <String>Medium</String>
+      <String>High</String>
+    </AllowedValues>
+    <Description>TEMP 1.1.0 test - string with allowedValues (dropdown), configured but must be rejected</Description>
+  </ObjectAttribute>
+  <ObjectAttribute displayName="SBX Read Only Note" name="sbxReadOnlyNote" type="string">
+    <Description>TEMP 1.1.0 test - string without editMode (read-only), configured but must be rejected</Description>
+  </ObjectAttribute>
+  <ObjectAttribute displayName="SBX Review Date" editMode="Permanent" name="sbxReviewDate" type="date">
+    <Description>TEMP 1.1.0 test - date, unchanged</Description>
+  </ObjectAttribute>
+  <ObjectAttribute displayName="SBX Critical" editMode="Permanent" name="sbxCritical" type="boolean">
+    <Description>TEMP 1.1.0 test - boolean, unchanged</Description>
+  </ObjectAttribute>
+  <ObjectAttribute displayName="SBX Max Members" editMode="Permanent" name="sbxMaxMembers" type="int">
+    <Description>TEMP 1.1.0 test - int, unchanged</Description>
+  </ObjectAttribute>
+</ObjectConfig>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Plugin PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<Plugin name="RoleTextarea" displayName="Role Extended Attribute Textarea" version="1.2.0" minSystemVersion="8.0" certificationLevel="None">
+  <Attributes>
+    <Map>
+      <entry key="settings">
+        <value>
+          <List>
+            <Setting name="multilineAttributes" dataType="string" multiValue="true"
+                     label="Multiline Role attributes"
+                     helpText="Names (ObjectAttribute name, not display name) of Role extended String attributes to edit as a textarea in the Role Editor. Only single-valued String attributes are accepted; an attribute is converted only where the Role Editor shows it as an editable text input."/>
+          </List>
+        </value>
+      </entry>
+      <entry key="restResources">
+        <value>
+          <List>
+            <String>roletextarea.rest.RoleTextareaResource</String>
+          </List>
+        </value>
+      </entry>
+      <entry key="snippets">
+        <value>
+          <List>
+            <Snippet regexPattern="/define/roles/modeler/roleEditor\.jsf" rightRequired="">
+              <Scripts>
+                <String>ui/js/roleTextarea.js</String>
+              </Scripts>
+            </Snippet>
+          </List>
+        </value>
+      </entry>
+    </Map>
+  </Attributes>
+</Plugin>

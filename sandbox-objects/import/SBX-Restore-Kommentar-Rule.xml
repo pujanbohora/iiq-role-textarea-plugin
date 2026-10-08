@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE Rule PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<Rule name="SBX Restore Kommentar" language="beanshell"><Source>
+import sailpoint.object.Bundle;
+Bundle b = context.getObjectByName(Bundle.class, "SBX Textarea Test Role");
+b.setAttribute("sbxKommentarsText", "Line one\nLine two\nLine three");
+context.saveObject(b); context.commitTransaction();
+return b.getAttribute("sbxKommentarsText");
+</Source></Rule>

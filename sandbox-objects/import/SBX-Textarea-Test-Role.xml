@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE Bundle PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<Bundle name="SBX Textarea Test Role" displayName="SBX Textarea Test Role" type="business">
+  <Attributes>
+    <Map>
+      <entry key="sbxKommentarsText" value="Line one&#10;Line two&#10;Line three"/>
+    </Map>
+  </Attributes>
+  <Description>Line A of description
+Line B of description</Description>
+  <Owner><Reference class="sailpoint.object.Identity" name="spadmin"/></Owner>
+</Bundle>

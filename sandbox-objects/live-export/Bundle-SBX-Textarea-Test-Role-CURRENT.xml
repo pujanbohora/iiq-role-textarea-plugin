@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE Bundle PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<Bundle created="1790718843881" displayName="SBX Textarea Test Role" id="7f000001a0ef18f081a0ef291be60002" modified="1790871229608" name="SBX Textarea Test Role" type="business">
+  <Attributes>
+    <Map>
+      <entry key="accountSelectorRules"/>
+      <entry key="allowDuplicateAccounts" value="false"/>
+      <entry key="allowMultipleAssignments" value="false"/>
+      <entry key="mergeTemplates" value="false"/>
+      <entry key="sbxKommentarsText" value="Line one&#xD;&#xA;Line two&#xD;&#xA;Line three&#xD;&#xA;Line four typed in UI"/>
+      <entry key="sysDescriptions">
+        <value>
+          <Map>
+            <entry key="en_US" value="Line A of description Line B of description"/>
+          </Map>
+        </value>
+      </entry>
+    </Map>
+  </Attributes>
+  <Owner>
+    <Reference class="sailpoint.object.Identity" id="c0a801bd96361bba819636830ceb00e3" name="spadmin"/>
+  </Owner>
+</Bundle>
